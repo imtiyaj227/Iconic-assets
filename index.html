@@ -22,12 +22,21 @@
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
         </ul>
+<div class="nav-icons">
 
-        <div class="nav-icons">
-            <button>🔍</button>
-            <button>🛒</button>
-            <button>Login</button>
-        </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search Products...">
+        <button>🔍</button>
+    </div>
+
+    <div class="cart">
+        🛒
+        <span id="cart-count">0</span>
+    </div>
+
+    <button class="login-btn">Login</button>
+
+</div>    
     </nav>
 </header>
 <section class="hero">
@@ -56,38 +65,113 @@
     <div class="product-container">
 
         <div class="product-card">
-            <img src="images/products/makhana.jpg" alt="Makhana">
+            <img src="vintage-bowl-roasted-hazelnut.jpg" alt="Makhana">
             <h3>Makhana</h3>
             <p class="price">₹299 / 250g</p>
             <p>⭐⭐⭐⭐⭐ (4.9)</p>
-            <button>Add to Cart</button>
-            <button class="quick-view">Quick View</button>
+            <button class="add-cart"
+            data-name="Makhana"
+            data-price="299">Add to Cart</button>
         </div>
 
         <div class="product-card"><span class="badge">10% OFF</span>
 <span class="wishlist">❤</span>
-            <img src="images/products/moringa.jpg" alt="Moringa">
+            <img src="moringa.jpg" alt="Moringa">
             <h3>Moringa Powder</h3>
             <p class="price">₹249 / 200g</p>
             <p>⭐⭐⭐⭐⭐ (4.8)</p>
-            <button>Add to Cart</button>
-            <button class="quick-view">Quick View</button>
+            <button class="add-cart" data-name="Moringa Powder"
+            data-price="249">Add to cart</button>
         </div>
 
         <div class="product-card"><span class="badge">10% OFF</span>
 <span class="wishlist">❤</span>
-            <img src="images/products/tea.jpg" alt="Tea">
+            <img src="tea.jpg" alt="Tea">
             <h3>Organic Tea</h3>
             <p class="price">₹199 / 250g</p>
             <p>⭐⭐⭐⭐☆ (4.7)</p>
-            <button>Add to Cart</button>
-            <button class="quick-view">Quick View</button>
+            <button class="add-cart" data-name="Organic Tea"
+            data-price="199">Add to Cart</button>
         </div>
 
     </div>
 
 </section>
+<section class="why-us">
 
+    <h2>Why Choose Iconic Assets?</h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <h3>🌿 100% Organic</h3>
+            <p>Pure and naturally grown products.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🚚 Fast Delivery</h3>
+            <p>Quick delivery across India.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🏆 Premium Quality</h3>
+            <p>Carefully selected premium products.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>💳 Secure Payment</h3>
+            <p>Safe and trusted online payment.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="cart-section">
+
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Total: ₹<span id="total-price">0</span></h3>
+
+</section>
     <script src="script.js"></script>
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h2>🌿 Iconic Assets</h2>
+            <p>Bengal's Miele</p>
+            <p>Premium Organic Products from Bengal.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>📞 +91 8972013925</p>
+            <p>📧 info@iconicassets.com</p>
+            <p>📩iftiyarahamed742135@gmail.com</p>
+            <p>📍 Murshidabad, West Bengal</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Iconic Assets | Bengal's Miele. All Rights Reserved.
+    </p>
+
+</footer>
 </body>
 </html>
